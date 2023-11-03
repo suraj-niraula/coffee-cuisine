@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./Cart.css";
 
-const Cart = ({ cartItems }) => {
+const Cart = ({ cartItems, updateCartCount }) => {
   const [updatedCartItems, setUpdatedCartItems] = useState([]);
 
   useEffect(() => {
-    setUpdatedCartItems(
-      cartItems.map((item) => ({
+    if (Array.isArray(cartItems)) {
+      const updatedItems = cartItems.map((item) => ({
         ...item,
         totalPrice: item.quantity * item.price,
-      }))
-    );
+      }));
+      setUpdatedCartItems(updatedItems);
+    }
   }, [cartItems]);
 
   const getTotalPrice = () => {
@@ -39,6 +40,10 @@ const Cart = ({ cartItems }) => {
     const updatedItems = [...updatedCartItems];
     updatedItems.splice(index, 1); // Remove the item from the array
     setUpdatedCartItems(updatedItems);
+
+    // Update the cart count by calling the callback function
+    const newCartCount = updatedItems.slice(); // Create a copy of updated items
+    updateCartCount(newCartCount);
   };
 
   return (

@@ -22,17 +22,30 @@ function App() {
     setCartItems([...cartItems, newItem]);
   };
 
+  // Function to update the cart count
+  const updateCartCount = (updatedItems) => {
+    setCartItems(updatedItems);
+  };
+
   return (
     <BrowserRouter>
       <Navbar cartCount={cartItems.length} />
       <Routes>
+        <Route path="/" element={<Home addToCart={addToCart} />} />
         <Route path="/home" element={<Home addToCart={addToCart} />} />
         <Route path="/about" element={<About />} />
         <Route path="/menu" element={<OurMenu />} />
         <Route path="/reservation" element={<Reservation />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/cart" element={<Cart cartItems={cartItems || []} />} />
-        <Route element={<Home addToCart={addToCart} />} />
+        <Route
+          path="/cart"
+          element={
+            <Cart
+              cartItems={cartItems || []}
+              updateCartCount={updateCartCount}
+            />
+          }
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

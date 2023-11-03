@@ -1,7 +1,7 @@
 {
+  "homepage": "https://myusername.github.io/my-app",
   "name": "cafe-react",
   "version": "0.1.0",
-  "homepage": "suraj-niraula.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
