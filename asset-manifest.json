@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/coffee-cuisine/static/css/main.e2e67ba1.css",
+    "main.js": "/coffee-cuisine/static/js/main.a9a4e65d.js",
+    "static/js/787.f02aa03d.chunk.js": "/coffee-cuisine/static/js/787.f02aa03d.chunk.js",
+    "static/media/online.jpg": "/coffee-cuisine/static/media/online.d95a4ce99317965c017e.jpg",
+    "static/media/aboutUs.png": "/coffee-cuisine/static/media/aboutUs.4ef0c1e88fc61419fff2.png",
+    "static/media/cover.avif": "/coffee-cuisine/static/media/cover.0b91198bf35a0166d058.avif",
+    "static/media/reservation.webp": "/coffee-cuisine/static/media/reservation.348935d137881931f574.webp",
+    "static/media/Eggs Benedict on asparagus with bacon and hollandaise sauce.png": "/coffee-cuisine/static/media/Eggs Benedict on asparagus with bacon and hollandaise sauce.3624c1595c4589e827fe.png",
+    "static/media/image1.png": "/coffee-cuisine/static/media/image1.d1e4adbf25f8b1f9d8b6.png",
+    "static/media/main-logo.png": "/coffee-cuisine/static/media/main-logo.69b68c72722b033f1dc5.png",
+    "index.html": "/coffee-cuisine/index.html",
+    "main.e2e67ba1.css.map": "/coffee-cuisine/static/css/main.e2e67ba1.css.map",
+    "main.a9a4e65d.js.map": "/coffee-cuisine/static/js/main.a9a4e65d.js.map",
+    "787.f02aa03d.chunk.js.map": "/coffee-cuisine/static/js/787.f02aa03d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2e67ba1.css",
+    "static/js/main.a9a4e65d.js"
+  ]
+}
